@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Livro Cadastro</title>
+    </h:head>
+    <h:body>
+        <h1>Livro Cadastro</h1>
+        <br></br>
+        <br></br>
+        <h:form>
+            <h:panelGrid columns="2">
+                Titulo
+                <h:inputText id="iptTitulo" value="#{bgrIndex.titulo}"></h:inputText>
+                Autor
+                <h:inputText id="iptAutor" value="#{bgrIndex.autor}"></h:inputText>
+                Pagina
+                <h:inputText id="iptPagina" value="#{bgrIndex.pagina}"></h:inputText>
+                <h:commandButton id="btnCadastrar" value="Cadastrar" action="#{bgrIndex.cadastrarLivro()}"></h:commandButton>
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
+
