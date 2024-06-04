@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Cadastro Pessoa</title>
+    </h:head>
+    <h:body>
+        <h1>Cadastro Pessoa</h1>
+        <br></br>
+        <br></br>
+        <h:form>
+            <h:panelGrid columns="2">
+                Nome
+                <h:inputText id="iptNome" value="#{bgrIndex.nome}"></h:inputText>
+                Rg
+                <h:inputText id="iptRg" value="#{bgrIndex.rg}"></h:inputText>
+                Cpf
+                <h:inputText id="iptCpf" value="#{bgrIndex.cpf}"></h:inputText>
+                
+                <h:commandButton id="btnCadastrar" value="Cadastrar" action="#{bgrIndex.cadastrarPessoa()}"></h:commandButton>
+                
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
+
